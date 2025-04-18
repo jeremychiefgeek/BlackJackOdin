@@ -1,4 +1,4 @@
-# 🂡 Command-Line Blackjack in Odin
+# 🂡 Command-Line Blackjack in Odin (WORK IN PROGRESS)
 
 ## 📝 Project Overview
 A minimalist command-line Blackjack game written in the [Odin programming language](https://odin-lang.org/). This project demonstrates core programming concepts in Odin including I/O handling, control flow, and data structures, while providing a playable and interactive blackjack experience in the terminal.
@@ -32,6 +32,8 @@ A minimalist command-line Blackjack game written in the [Odin programming langua
 odin run src
 ```
 
+---
+
 ## 🧠 How It Works
 1. Deck Initialization: Generates a fresh 52-card deck.
 2. Shuffling: Randomly shuffles the deck using rand from Odin's standard library.
@@ -39,6 +41,8 @@ odin run src
 4. Player Turn: Choose to Hit or Stand until bust or stand.
 5. Dealer Turn: Dealer plays by rules (hits below 17).
 6. Result: The program determines the winner based on Blackjack rules.
+
+---
 
 ## 📁 File Structure
 
@@ -50,14 +54,21 @@ src/
 └── utils.odin           // Helper functions (e.g., card display, input)
 ```
 
+---
+
 ## 🚧 Future Improvements
 - Split and Double Down options
 - Persistent game stats
 - Multiplayer support
 - Betting system
 
-##📄 License
+---
+
+## 📄 License
+
 MIT License
+
+---
 
 ## Debug Setup
 To setup debugging for Odin programs on Windows with VsCode follow these steps:
