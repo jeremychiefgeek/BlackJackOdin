@@ -56,3 +56,18 @@ create_card :: proc(suit: Suit, rank: Rank) -> Card {
 	}
 	return retCard
 }
+
+shuffle_deck :: proc(deck: ^[52]Card) {
+	currentCard: Card
+	randomCard: Card
+	randomIndex: int
+	for i in 0 ..< 4 {
+		for index in 0 ..< 52 {
+			randomIndex = rand.int_max(len(deck^))
+			currentCard = deck[index]
+			randomCard = deck[randomIndex]
+			deck^[index] = randomCard
+			deck^[randomIndex] = currentCard
+		}
+	}
+}
